@@ -1,0 +1,10 @@
+Links to extra resarch:
+
+-- Google C++ style (Nameing)
+https://google.github.io/styleguide/cppguide.html#General_Naming_Rules
+
+
+
+
+
+
