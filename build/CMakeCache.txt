@@ -206,8 +206,8 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE:STRING=
 // during RELWITHDEBINFO builds.
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
-//The CMake toolchain file
-CMAKE_TOOLCHAIN_FILE:FILEPATH=C:/dev/vcpkg/scripts/buildsystems/vcpkg.cmake
+//No help, variable specified on the command line.
+CMAKE_TOOLCHAIN_FILE:STRING=C:/dev/vcpkg/scripts/buildsystems/vcpkg.cmake
 
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
@@ -313,6 +313,24 @@ Z_VCPKG_PWSH_PATH:FILEPATH=Z_VCPKG_PWSH_PATH-NOTFOUND
 // triplet
 _VCPKG_INSTALLED_DIR:PATH=C:/dev/vcpkg/installed
 
+//Value Computed by CMake
+beer_lib_BINARY_DIR:STATIC=C:/Users/Honda/cpp/projects/Beer-Rating/build/beer_lib
+
+//Value Computed by CMake
+beer_lib_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+beer_lib_SOURCE_DIR:STATIC=C:/Users/Honda/cpp/projects/Beer-Rating/beer_lib
+
+//Value Computed by CMake
+main_BINARY_DIR:STATIC=C:/Users/Honda/cpp/projects/Beer-Rating/build/beer-rating
+
+//Value Computed by CMake
+main_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+main_SOURCE_DIR:STATIC=C:/Users/Honda/cpp/projects/Beer-Rating/beer-rating
+
 
 ########################
 # INTERNAL cache entries
@@ -332,8 +350,6 @@ CMAKE_CACHE_PATCH_VERSION:INTERNAL=1
 CMAKE_COMMAND:INTERNAL=C:/Program Files/CMake/bin/cmake.exe
 //Path to cpack program executable.
 CMAKE_CPACK_COMMAND:INTERNAL=C:/Program Files/CMake/bin/cpack.exe
-//ADVANCED property for variable: CMAKE_CTEST_COMMAND
-CMAKE_CTEST_COMMAND-ADVANCED:INTERNAL=1
 //Path to ctest program executable.
 CMAKE_CTEST_COMMAND:INTERNAL=C:/Program Files/CMake/bin/ctest.exe
 //ADVANCED property for variable: CMAKE_CXX_FLAGS
@@ -400,7 +416,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MT
 CMAKE_MT-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
 //Platform information initialized
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //noop for ranlib
