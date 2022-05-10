@@ -1,0 +1,5 @@
+if(EXISTS "C:/Users/Honda/cpp/projects/Beer-Rating/build/tests/BeerRatingTests[1]_tests.cmake")
+  include("C:/Users/Honda/cpp/projects/Beer-Rating/build/tests/BeerRatingTests[1]_tests.cmake")
+else()
+  add_test(BeerRatingTests_NOT_BUILT BeerRatingTests_NOT_BUILT)
+endif()

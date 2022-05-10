@@ -1,0 +1,10 @@
+^C:\USERS\HONDA\CPP\PROJECTS\BEER-RATING\BUILD\_DEPS\GOOGLETEST-SUBBUILD\CMAKEFILES\1417EB9551503F0F1CCB57446C900CFA\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Honda/cpp/projects/Beer-Rating/build/_deps/googletest-subbuild -BC:/Users/Honda/cpp/projects/Beer-Rating/build/_deps/googletest-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Honda/cpp/projects/Beer-Rating/build/_deps/googletest-subbuild/googletest-populate.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

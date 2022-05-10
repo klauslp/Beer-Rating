@@ -105,3 +105,14 @@ Priority:
 
 Description:
     Ask the user to enter the properties of the beer rating.
+
+## Design considerations
+
+### Entites
+
+We want a beer-rating object that can create, read and search for a rating. I would be nice with a design that could later be changed to graphical user interface.
+
+- reviewer, reviews and rates beers.
+- beer_rating, properties of a rated beer.
+
+Keep it simple as a start a Reviewer can create rating, view a rating, and search for ratings. That will do for now

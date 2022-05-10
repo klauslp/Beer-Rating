@@ -3,8 +3,12 @@ Links to extra resarch:
 -- Google C++ style (Nameing)
 https://google.github.io/styleguide/cppguide.html#General_Naming_Rules
 
+-- Setup CMake guide
+https://computingonplains.wordpress.com/building-c-applications-with-cmake-and-visual-studio-code/
 
+-- Configure CMake CTRL+Shift+P [] 
+https://code.visualstudio.com/docs/cpp/config-msvc#_cc-configurations
 
-
-
+-- Little help on Google test cmake structure
+https://stackoverflow.com/questions/63600356/google-test-setup-help-in-vscode
 

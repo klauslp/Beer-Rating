@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Honda\cpp\projects\Beer-Rating\build\CMakeFiles\e901fcb07aaed5b76e1ac23ce6639ae8\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{E81296C8-477A-3DC7-B69D-B787E9229ED4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
