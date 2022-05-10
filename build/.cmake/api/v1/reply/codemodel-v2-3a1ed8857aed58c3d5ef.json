@@ -1,0 +1,1432 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						10
+					]
+				},
+				{
+					"build" : "beer_lib",
+					"jsonFile" : "directory-beer_lib-Debug-20bb15325d671e900e43.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11-3.18"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "beer_lib",
+					"targetIndexes" : 
+					[
+						1,
+						11
+					]
+				},
+				{
+					"build" : "beer-rating",
+					"jsonFile" : "directory-beer-rating-Debug-b225811cc393b625f2fb.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11-3.18"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "beer-rating",
+					"targetIndexes" : 
+					[
+						16
+					]
+				},
+				{
+					"build" : "tests",
+					"childIndexes" : 
+					[
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-tests-Debug-70e4927a02b591d5c1f8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "tests",
+					"targetIndexes" : 
+					[
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				},
+				{
+					"build" : "_deps/googletest-build",
+					"childIndexes" : 
+					[
+						5
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.googletest-build-Debug-8b187651187085369010.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 2,
+					"source" : "build/_deps/googletest-src",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "_deps/googletest-build/googlemock",
+					"childIndexes" : 
+					[
+						6
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.googletest-build.googlemock-Debug-a2b4df8d6e68c2d7db81.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 3,
+					"source" : "build/_deps/googletest-src/googlemock",
+					"targetIndexes" : 
+					[
+						3,
+						12,
+						13
+					]
+				},
+				{
+					"build" : "_deps/googletest-build/googletest",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.googletest-build.googletest-Debug-ccf7d6f38d9d0f344698.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 4,
+					"source" : "build/_deps/googletest-src/googletest",
+					"targetIndexes" : 
+					[
+						4,
+						14,
+						15
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						2,
+						3
+					],
+					"name" : "Beer-Rating",
+					"targetIndexes" : 
+					[
+						0,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						16
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "beer_lib",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						11
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						3
+					],
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "googletest-distribution",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						4
+					],
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "gmock",
+					"parentIndex" : 2,
+					"targetIndexes" : 
+					[
+						3,
+						12,
+						13
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "gtest",
+					"parentIndex" : 3,
+					"targetIndexes" : 
+					[
+						4,
+						14,
+						15
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Debug-81abdc445a8321765dd4.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@2b0318e4e8371458c692",
+					"jsonFile" : "target-ALL_BUILD-Debug-5c83c73a0ba1013f7c23.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "ALL_BUILD::@f0697b77e45c2bae8283",
+					"jsonFile" : "target-ALL_BUILD-Debug-56777629876bcdb02831.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "ALL_BUILD::@0f7bb11d64f3678238c7",
+					"jsonFile" : "target-ALL_BUILD-Debug-734464bece908032dbde.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "ALL_BUILD::@1ea2dfc0605fe3ab2a3f",
+					"jsonFile" : "target-ALL_BUILD-Debug-7e8b9d5f843c672d8f64.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "BeerRatingTests::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-BeerRatingTests-Debug-514aa3274a9c5dec8417.json",
+					"name" : "BeerRatingTests",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "Continuous::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-Continuous-Debug-518c789110b03a4ced0b.json",
+					"name" : "Continuous",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "Experimental::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-Experimental-Debug-6adeb0ea1319e887884c.json",
+					"name" : "Experimental",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "Nightly::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-Nightly-Debug-8b75bdd4701a898fc282.json",
+					"name" : "Nightly",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "NightlyMemoryCheck::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-NightlyMemoryCheck-Debug-1756e6d2649c0ceebde7.json",
+					"name" : "NightlyMemoryCheck",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Debug-d3f37675499613b51c35.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "beer_lib::@2b0318e4e8371458c692",
+					"jsonFile" : "target-beer_lib-Debug-b50d2bd9aa4c5e399ea8.json",
+					"name" : "beer_lib",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "gmock::@0f7bb11d64f3678238c7",
+					"jsonFile" : "target-gmock-Debug-1f23793ec8ed925149fa.json",
+					"name" : "gmock",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "gmock_main::@0f7bb11d64f3678238c7",
+					"jsonFile" : "target-gmock_main-Debug-58d2b1094c98af294ea1.json",
+					"name" : "gmock_main",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "gtest::@1ea2dfc0605fe3ab2a3f",
+					"jsonFile" : "target-gtest-Debug-a8c621cffeb810ee2e01.json",
+					"name" : "gtest",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f",
+					"jsonFile" : "target-gtest_main-Debug-4c46834a4ae608f9603c.json",
+					"name" : "gtest_main",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "main::@01ee9c798f551c9756a6",
+					"jsonFile" : "target-main-Debug-a2a1fefda2a1e363becb.json",
+					"name" : "main",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						10
+					]
+				},
+				{
+					"build" : "beer_lib",
+					"jsonFile" : "directory-beer_lib-Release-20bb15325d671e900e43.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11-3.18"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "beer_lib",
+					"targetIndexes" : 
+					[
+						1,
+						11
+					]
+				},
+				{
+					"build" : "beer-rating",
+					"jsonFile" : "directory-beer-rating-Release-b225811cc393b625f2fb.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11-3.18"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "beer-rating",
+					"targetIndexes" : 
+					[
+						16
+					]
+				},
+				{
+					"build" : "tests",
+					"childIndexes" : 
+					[
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-tests-Release-70e4927a02b591d5c1f8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "tests",
+					"targetIndexes" : 
+					[
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				},
+				{
+					"build" : "_deps/googletest-build",
+					"childIndexes" : 
+					[
+						5
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.googletest-build-Release-8b187651187085369010.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 2,
+					"source" : "build/_deps/googletest-src",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "_deps/googletest-build/googlemock",
+					"childIndexes" : 
+					[
+						6
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.googletest-build.googlemock-Release-2678e1c0f55c1098ad3f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 3,
+					"source" : "build/_deps/googletest-src/googlemock",
+					"targetIndexes" : 
+					[
+						3,
+						12,
+						13
+					]
+				},
+				{
+					"build" : "_deps/googletest-build/googletest",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.googletest-build.googletest-Release-a1492c70c04dfdb04156.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 4,
+					"source" : "build/_deps/googletest-src/googletest",
+					"targetIndexes" : 
+					[
+						4,
+						14,
+						15
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						2,
+						3
+					],
+					"name" : "Beer-Rating",
+					"targetIndexes" : 
+					[
+						0,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						16
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "beer_lib",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						11
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						3
+					],
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "googletest-distribution",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						4
+					],
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "gmock",
+					"parentIndex" : 2,
+					"targetIndexes" : 
+					[
+						3,
+						12,
+						13
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "gtest",
+					"parentIndex" : 3,
+					"targetIndexes" : 
+					[
+						4,
+						14,
+						15
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Release-81abdc445a8321765dd4.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@2b0318e4e8371458c692",
+					"jsonFile" : "target-ALL_BUILD-Release-5c83c73a0ba1013f7c23.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "ALL_BUILD::@f0697b77e45c2bae8283",
+					"jsonFile" : "target-ALL_BUILD-Release-56777629876bcdb02831.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "ALL_BUILD::@0f7bb11d64f3678238c7",
+					"jsonFile" : "target-ALL_BUILD-Release-734464bece908032dbde.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "ALL_BUILD::@1ea2dfc0605fe3ab2a3f",
+					"jsonFile" : "target-ALL_BUILD-Release-7e8b9d5f843c672d8f64.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "BeerRatingTests::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-BeerRatingTests-Release-69997305e8b0c0de0b53.json",
+					"name" : "BeerRatingTests",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "Continuous::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-Continuous-Release-518c789110b03a4ced0b.json",
+					"name" : "Continuous",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "Experimental::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-Experimental-Release-6adeb0ea1319e887884c.json",
+					"name" : "Experimental",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "Nightly::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-Nightly-Release-8b75bdd4701a898fc282.json",
+					"name" : "Nightly",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "NightlyMemoryCheck::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-NightlyMemoryCheck-Release-1756e6d2649c0ceebde7.json",
+					"name" : "NightlyMemoryCheck",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Release-d3f37675499613b51c35.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "beer_lib::@2b0318e4e8371458c692",
+					"jsonFile" : "target-beer_lib-Release-36992a7ce4c070d82e94.json",
+					"name" : "beer_lib",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "gmock::@0f7bb11d64f3678238c7",
+					"jsonFile" : "target-gmock-Release-d0870e1d8888b5daf28e.json",
+					"name" : "gmock",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "gmock_main::@0f7bb11d64f3678238c7",
+					"jsonFile" : "target-gmock_main-Release-f28ef5eec883e85f8dc4.json",
+					"name" : "gmock_main",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "gtest::@1ea2dfc0605fe3ab2a3f",
+					"jsonFile" : "target-gtest-Release-d569a672999aacaf0fc4.json",
+					"name" : "gtest",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f",
+					"jsonFile" : "target-gtest_main-Release-c90c546e89765f384a2f.json",
+					"name" : "gtest_main",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "main::@01ee9c798f551c9756a6",
+					"jsonFile" : "target-main-Release-a741b0a5b20b1d575e1d.json",
+					"name" : "main",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-MinSizeRel-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						10
+					]
+				},
+				{
+					"build" : "beer_lib",
+					"jsonFile" : "directory-beer_lib-MinSizeRel-20bb15325d671e900e43.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11-3.18"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "beer_lib",
+					"targetIndexes" : 
+					[
+						1,
+						11
+					]
+				},
+				{
+					"build" : "beer-rating",
+					"jsonFile" : "directory-beer-rating-MinSizeRel-b225811cc393b625f2fb.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11-3.18"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "beer-rating",
+					"targetIndexes" : 
+					[
+						16
+					]
+				},
+				{
+					"build" : "tests",
+					"childIndexes" : 
+					[
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-tests-MinSizeRel-70e4927a02b591d5c1f8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "tests",
+					"targetIndexes" : 
+					[
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				},
+				{
+					"build" : "_deps/googletest-build",
+					"childIndexes" : 
+					[
+						5
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.googletest-build-MinSizeRel-8b187651187085369010.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 2,
+					"source" : "build/_deps/googletest-src",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "_deps/googletest-build/googlemock",
+					"childIndexes" : 
+					[
+						6
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.googletest-build.googlemock-MinSizeRel-b41a53071231c1aec677.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 3,
+					"source" : "build/_deps/googletest-src/googlemock",
+					"targetIndexes" : 
+					[
+						3,
+						12,
+						13
+					]
+				},
+				{
+					"build" : "_deps/googletest-build/googletest",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.googletest-build.googletest-MinSizeRel-74e554625cd947877f3b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 4,
+					"source" : "build/_deps/googletest-src/googletest",
+					"targetIndexes" : 
+					[
+						4,
+						14,
+						15
+					]
+				}
+			],
+			"name" : "MinSizeRel",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						2,
+						3
+					],
+					"name" : "Beer-Rating",
+					"targetIndexes" : 
+					[
+						0,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						16
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "beer_lib",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						11
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						3
+					],
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "googletest-distribution",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						4
+					],
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "gmock",
+					"parentIndex" : 2,
+					"targetIndexes" : 
+					[
+						3,
+						12,
+						13
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "gtest",
+					"parentIndex" : 3,
+					"targetIndexes" : 
+					[
+						4,
+						14,
+						15
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-81abdc445a8321765dd4.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@2b0318e4e8371458c692",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-5c83c73a0ba1013f7c23.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "ALL_BUILD::@f0697b77e45c2bae8283",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-56777629876bcdb02831.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "ALL_BUILD::@0f7bb11d64f3678238c7",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-734464bece908032dbde.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "ALL_BUILD::@1ea2dfc0605fe3ab2a3f",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-7e8b9d5f843c672d8f64.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "BeerRatingTests::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-BeerRatingTests-MinSizeRel-c6240af604fce6cf7b7a.json",
+					"name" : "BeerRatingTests",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "Continuous::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-Continuous-MinSizeRel-518c789110b03a4ced0b.json",
+					"name" : "Continuous",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "Experimental::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-Experimental-MinSizeRel-6adeb0ea1319e887884c.json",
+					"name" : "Experimental",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "Nightly::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-Nightly-MinSizeRel-8b75bdd4701a898fc282.json",
+					"name" : "Nightly",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "NightlyMemoryCheck::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-NightlyMemoryCheck-MinSizeRel-1756e6d2649c0ceebde7.json",
+					"name" : "NightlyMemoryCheck",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-MinSizeRel-d3f37675499613b51c35.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "beer_lib::@2b0318e4e8371458c692",
+					"jsonFile" : "target-beer_lib-MinSizeRel-799de8027296850cd8ae.json",
+					"name" : "beer_lib",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "gmock::@0f7bb11d64f3678238c7",
+					"jsonFile" : "target-gmock-MinSizeRel-b0726f5c30690d6c8bb3.json",
+					"name" : "gmock",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "gmock_main::@0f7bb11d64f3678238c7",
+					"jsonFile" : "target-gmock_main-MinSizeRel-e1f4e360c06c4443b90e.json",
+					"name" : "gmock_main",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "gtest::@1ea2dfc0605fe3ab2a3f",
+					"jsonFile" : "target-gtest-MinSizeRel-2f7c5c22661c86465192.json",
+					"name" : "gtest",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f",
+					"jsonFile" : "target-gtest_main-MinSizeRel-d56fb13966bf7b47c556.json",
+					"name" : "gtest_main",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "main::@01ee9c798f551c9756a6",
+					"jsonFile" : "target-main-MinSizeRel-68aa3edf65a122ba0aff.json",
+					"name" : "main",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-RelWithDebInfo-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						10
+					]
+				},
+				{
+					"build" : "beer_lib",
+					"jsonFile" : "directory-beer_lib-RelWithDebInfo-20bb15325d671e900e43.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11-3.18"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "beer_lib",
+					"targetIndexes" : 
+					[
+						1,
+						11
+					]
+				},
+				{
+					"build" : "beer-rating",
+					"jsonFile" : "directory-beer-rating-RelWithDebInfo-b225811cc393b625f2fb.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11-3.18"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "beer-rating",
+					"targetIndexes" : 
+					[
+						16
+					]
+				},
+				{
+					"build" : "tests",
+					"childIndexes" : 
+					[
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-tests-RelWithDebInfo-70e4927a02b591d5c1f8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "tests",
+					"targetIndexes" : 
+					[
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				},
+				{
+					"build" : "_deps/googletest-build",
+					"childIndexes" : 
+					[
+						5
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.googletest-build-RelWithDebInfo-8b187651187085369010.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 2,
+					"source" : "build/_deps/googletest-src",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "_deps/googletest-build/googlemock",
+					"childIndexes" : 
+					[
+						6
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.googletest-build.googlemock-RelWithDebInfo-3e84ae1660d94560fa7b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 3,
+					"source" : "build/_deps/googletest-src/googlemock",
+					"targetIndexes" : 
+					[
+						3,
+						12,
+						13
+					]
+				},
+				{
+					"build" : "_deps/googletest-build/googletest",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.googletest-build.googletest-RelWithDebInfo-0c25d3d7ee73eeb1f8b1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 4,
+					"source" : "build/_deps/googletest-src/googletest",
+					"targetIndexes" : 
+					[
+						4,
+						14,
+						15
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						2,
+						3
+					],
+					"name" : "Beer-Rating",
+					"targetIndexes" : 
+					[
+						0,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						16
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "beer_lib",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						11
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						3
+					],
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "googletest-distribution",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						4
+					],
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "gmock",
+					"parentIndex" : 2,
+					"targetIndexes" : 
+					[
+						3,
+						12,
+						13
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "gtest",
+					"parentIndex" : 3,
+					"targetIndexes" : 
+					[
+						4,
+						14,
+						15
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-81abdc445a8321765dd4.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@2b0318e4e8371458c692",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-5c83c73a0ba1013f7c23.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "ALL_BUILD::@f0697b77e45c2bae8283",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-56777629876bcdb02831.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "ALL_BUILD::@0f7bb11d64f3678238c7",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-734464bece908032dbde.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "ALL_BUILD::@1ea2dfc0605fe3ab2a3f",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-7e8b9d5f843c672d8f64.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "BeerRatingTests::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-BeerRatingTests-RelWithDebInfo-75b9b7fa1fa8457864e3.json",
+					"name" : "BeerRatingTests",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "Continuous::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-Continuous-RelWithDebInfo-518c789110b03a4ced0b.json",
+					"name" : "Continuous",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "Experimental::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-Experimental-RelWithDebInfo-6adeb0ea1319e887884c.json",
+					"name" : "Experimental",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "Nightly::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-Nightly-RelWithDebInfo-8b75bdd4701a898fc282.json",
+					"name" : "Nightly",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "NightlyMemoryCheck::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-NightlyMemoryCheck-RelWithDebInfo-1756e6d2649c0ceebde7.json",
+					"name" : "NightlyMemoryCheck",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-RelWithDebInfo-d3f37675499613b51c35.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "beer_lib::@2b0318e4e8371458c692",
+					"jsonFile" : "target-beer_lib-RelWithDebInfo-4fa07c0538cce1456802.json",
+					"name" : "beer_lib",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "gmock::@0f7bb11d64f3678238c7",
+					"jsonFile" : "target-gmock-RelWithDebInfo-297dc18c5b1169c80d81.json",
+					"name" : "gmock",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "gmock_main::@0f7bb11d64f3678238c7",
+					"jsonFile" : "target-gmock_main-RelWithDebInfo-c7c7d65a22940faaebdc.json",
+					"name" : "gmock_main",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "gtest::@1ea2dfc0605fe3ab2a3f",
+					"jsonFile" : "target-gtest-RelWithDebInfo-c1017e67fd20d46a656e.json",
+					"name" : "gtest",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f",
+					"jsonFile" : "target-gtest_main-RelWithDebInfo-511aad8713736b8b8f2a.json",
+					"name" : "gtest_main",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "main::@01ee9c798f551c9756a6",
+					"jsonFile" : "target-main-RelWithDebInfo-511cd62b31cb8a982970.json",
+					"name" : "main",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Honda/cpp/projects/Beer-Rating/build",
+		"source" : "C:/Users/Honda/cpp/projects/Beer-Rating"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

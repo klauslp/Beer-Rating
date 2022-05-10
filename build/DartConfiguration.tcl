@@ -44,7 +44,7 @@ SVNOptions:
 SVNUpdateOptions: 
 
 # Git options
-GITCommand: C:/Program Files/Git/cmd/git.exe
+GITCommand: 
 GITInitSubmodules: 
 GITUpdateOptions: 
 GITUpdateCustom: 
@@ -57,13 +57,13 @@ P4UpdateOptions:
 P4UpdateCustom: 
 
 # Generic update command
-UpdateCommand: C:/Program Files/Git/cmd/git.exe
+UpdateCommand: 
 UpdateOptions: 
-UpdateType: git
+UpdateType: 
 
 # Compiler info
-Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x64/cl.exe
-CompilerVersion: 19.29.30138.0
+Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.31.31103/bin/Hostx64/x86/cl.exe
+CompilerVersion: 19.31.31105.0
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 

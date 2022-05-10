@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files/Beer-Rating")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Beer-Rating")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -36,6 +36,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("C:/Users/Honda/cpp/projects/Beer-Rating/build/beer_lib/cmake_install.cmake")
   include("C:/Users/Honda/cpp/projects/Beer-Rating/build/beer-rating/cmake_install.cmake")
+  include("C:/Users/Honda/cpp/projects/Beer-Rating/build/tests/cmake_install.cmake")
 
 endif()
 

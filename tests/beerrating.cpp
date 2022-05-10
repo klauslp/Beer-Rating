@@ -1,7 +1,13 @@
 
+#include "Beer_rating.hpp"
 #include "gtest/gtest.h"
-#include "beer_rating.hpp"
 
-TEST(Beer_RatingTests, testBeer_name) {
-    ASSERT_STREQ("Beer name", Beer_rating.name);
+namespace
+{
+    TEST(BeerRatingTests, testBeerName)
+    {
+        Beer_rating br;
+        br.name = "Beer name";
+        EXPECT_EQ("Beer name", br.name);
+    }
 }

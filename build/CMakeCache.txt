@@ -14,20 +14,23 @@
 # EXTERNAL cache entries
 ########################
 
+//Builds the googlemock subproject
+BUILD_GMOCK:BOOL=ON
+
 //Build the testing tree.
 BUILD_TESTING:BOOL=ON
 
 //Value Computed by CMake
-Beer-Rating_BINARY_DIR:STATIC=C:/Users/Honda/cpp/projects/Beer-Rating/build
+Beer-Rating_BINARY_DIR:STATIC=C:/Users/Honda/cpp/projects/Beer-Rating/build/beer-rating
 
 //Value Computed by CMake
-Beer-Rating_IS_TOP_LEVEL:STATIC=ON
+Beer-Rating_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-Beer-Rating_SOURCE_DIR:STATIC=C:/Users/Honda/cpp/projects/Beer-Rating
+Beer-Rating_SOURCE_DIR:STATIC=C:/Users/Honda/cpp/projects/Beer-Rating/beer-rating
 
 //Path to a program.
-CMAKE_AR:FILEPATH=C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x64/lib.exe
+CMAKE_AR:FILEPATH=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.31.31103/bin/Hostx64/x86/lib.exe
 
 //Semicolon separated list of supported configuration types, only
 // supports Debug, Release, MinSizeRel, and RelWithDebInfo, anything
@@ -71,7 +74,7 @@ CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=/MD /Zi /O2 /Ob1 /DNDEBUG
 CMAKE_C_STANDARD_LIBRARIES:STRING=kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
 
 //Flags used by the linker during all build types.
-CMAKE_EXE_LINKER_FLAGS:STRING=/machine:x64
+CMAKE_EXE_LINKER_FLAGS:STRING=/machine:X86
 
 //Flags used by the linker during DEBUG builds.
 CMAKE_EXE_LINKER_FLAGS_DEBUG:STRING=/debug /INCREMENTAL
@@ -88,15 +91,63 @@ CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=/debug /INCREMENTAL
 //No help, variable specified on the command line.
 CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE
 
+//User executables (bin)
+CMAKE_INSTALL_BINDIR:PATH=bin
+
+//Read-only architecture-independent data (DATAROOTDIR)
+CMAKE_INSTALL_DATADIR:PATH=
+
+//Read-only architecture-independent data root (share)
+CMAKE_INSTALL_DATAROOTDIR:PATH=share
+
+//Documentation root (DATAROOTDIR/doc/PROJECT_NAME)
+CMAKE_INSTALL_DOCDIR:PATH=
+
+//C header files (include)
+CMAKE_INSTALL_INCLUDEDIR:PATH=include
+
+//Info documentation (DATAROOTDIR/info)
+CMAKE_INSTALL_INFODIR:PATH=
+
+//Object code libraries (lib)
+CMAKE_INSTALL_LIBDIR:PATH=lib
+
+//Program executables (libexec)
+CMAKE_INSTALL_LIBEXECDIR:PATH=libexec
+
+//Locale-dependent data (DATAROOTDIR/locale)
+CMAKE_INSTALL_LOCALEDIR:PATH=
+
+//Modifiable single-machine data (var)
+CMAKE_INSTALL_LOCALSTATEDIR:PATH=var
+
+//Man documentation (DATAROOTDIR/man)
+CMAKE_INSTALL_MANDIR:PATH=
+
+//C header files for non-gcc (/usr/include)
+CMAKE_INSTALL_OLDINCLUDEDIR:PATH=/usr/include
+
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files/Beer-Rating
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/Beer-Rating
+
+//Run-time variable data (LOCALSTATEDIR/run)
+CMAKE_INSTALL_RUNSTATEDIR:PATH=
+
+//System admin executables (sbin)
+CMAKE_INSTALL_SBINDIR:PATH=sbin
+
+//Modifiable architecture-independent data (com)
+CMAKE_INSTALL_SHAREDSTATEDIR:PATH=com
+
+//Read-only single-machine data (etc)
+CMAKE_INSTALL_SYSCONFDIR:PATH=etc
 
 //Path to a program.
-CMAKE_LINKER:FILEPATH=C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x64/link.exe
+CMAKE_LINKER:FILEPATH=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.31.31103/bin/Hostx64/x86/link.exe
 
 //Flags used by the linker during the creation of modules during
 // all build types.
-CMAKE_MODULE_LINKER_FLAGS:STRING=/machine:x64
+CMAKE_MODULE_LINKER_FLAGS:STRING=/machine:X86
 
 //Flags used by the linker during the creation of modules during
 // DEBUG builds.
@@ -115,7 +166,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE:STRING=/INCREMENTAL:NO
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO:STRING=/debug /INCREMENTAL
 
 //Path to a program.
-CMAKE_MT:FILEPATH=C:/Program Files (x86)/Windows Kits/10/bin/10.0.19041.0/x86/mt.exe
+CMAKE_MT:FILEPATH=C:/Program Files (x86)/Windows Kits/10/bin/10.0.19041.0/x64/mt.exe
 
 //Value Computed by CMake
 CMAKE_PROJECT_DESCRIPTION:STATIC=
@@ -142,7 +193,7 @@ CMAKE_PROJECT_VERSION_PATCH:STATIC=0
 CMAKE_PROJECT_VERSION_TWEAK:STATIC=
 
 //RC compiler
-CMAKE_RC_COMPILER:FILEPATH=C:/Program Files (x86)/Windows Kits/10/bin/10.0.19041.0/x86/rc.exe
+CMAKE_RC_COMPILER:FILEPATH=C:/Program Files (x86)/Windows Kits/10/bin/10.0.19041.0/x64/rc.exe
 
 //Flags for Windows Resource Compiler during all build types.
 CMAKE_RC_FLAGS:STRING=-DWIN32
@@ -161,7 +212,7 @@ CMAKE_RC_FLAGS_RELWITHDEBINFO:STRING=
 
 //Flags used by the linker during the creation of shared libraries
 // during all build types.
-CMAKE_SHARED_LINKER_FLAGS:STRING=/machine:x64
+CMAKE_SHARED_LINKER_FLAGS:STRING=/machine:X86
 
 //Flags used by the linker during the creation of shared libraries
 // during DEBUG builds.
@@ -188,7 +239,7 @@ CMAKE_SKIP_RPATH:BOOL=NO
 
 //Flags used by the linker during the creation of static libraries
 // during all build types.
-CMAKE_STATIC_LINKER_FLAGS:STRING=/machine:x64
+CMAKE_STATIC_LINKER_FLAGS:STRING=/machine:X86
 
 //Flags used by the linker during the creation of static libraries
 // during DEBUG builds.
@@ -222,30 +273,6 @@ COVERAGE_COMMAND:FILEPATH=COVERAGE_COMMAND-NOTFOUND
 //Extra command line flags to pass to the coverage tool
 COVERAGE_EXTRA_FLAGS:STRING=-l
 
-//Enable to build 7-Zip packages
-CPACK_BINARY_7Z:BOOL=OFF
-
-//Enable to build IFW packages
-CPACK_BINARY_IFW:BOOL=OFF
-
-//Enable to build NSIS packages
-CPACK_BINARY_NSIS:BOOL=ON
-
-//Enable to build NuGet packages
-CPACK_BINARY_NUGET:BOOL=OFF
-
-//Enable to build WiX packages
-CPACK_BINARY_WIX:BOOL=OFF
-
-//Enable to build ZIP packages
-CPACK_BINARY_ZIP:BOOL=OFF
-
-//Enable to build 7-Zip source packages
-CPACK_SOURCE_7Z:BOOL=ON
-
-//Enable to build ZIP source packages
-CPACK_SOURCE_ZIP:BOOL=ON
-
 //How many times to retry timed-out CTest submissions.
 CTEST_SUBMIT_RETRY_COUNT:STRING=3
 
@@ -255,8 +282,32 @@ CTEST_SUBMIT_RETRY_DELAY:STRING=5
 //Maximum time allowed before CTest will kill the test.
 DART_TESTING_TIMEOUT:STRING=1500
 
-//Path to a program.
-GITCOMMAND:FILEPATH=C:/Program Files/Git/cmd/git.exe
+//Directory under which to collect all populated content
+FETCHCONTENT_BASE_DIR:PATH=C:/Users/Honda/cpp/projects/Beer-Rating/build/_deps
+
+//Disables all attempts to download or update content and assumes
+// source dirs already exist
+FETCHCONTENT_FULLY_DISCONNECTED:BOOL=OFF
+
+//Enables QUIET option for all content population
+FETCHCONTENT_QUIET:BOOL=ON
+
+//When not empty, overrides where to find pre-populated content
+// for googletest
+FETCHCONTENT_SOURCE_DIR_GOOGLETEST:PATH=
+
+//Enables UPDATE_DISCONNECTED behavior for all content population
+FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
+
+//Enables UPDATE_DISCONNECTED behavior just for population of googletest
+FETCHCONTENT_UPDATES_DISCONNECTED_GOOGLETEST:BOOL=OFF
+
+//Git command line client
+GIT_EXECUTABLE:FILEPATH=C:/Program Files/Git/cmd/git.exe
+
+//Enable installation of googletest. (Projects embedding googletest
+// may want to turn this OFF.)
+INSTALL_GTEST:BOOL=ON
 
 //Command to build the project
 MAKECOMMAND:STRING="C:\Program Files\CMake\bin\cmake.exe" --build . --config "${CTEST_CONFIGURATION_TYPE}"
@@ -266,6 +317,9 @@ MEMORYCHECK_COMMAND:FILEPATH=MEMORYCHECK_COMMAND-NOTFOUND
 
 //File that contains suppressions for the memory checker
 MEMORYCHECK_SUPPRESSIONS_FILE:FILEPATH=
+
+//Path to a program.
+PYTHON_EXECUTABLE:FILEPATH=C:/Python39/python.exe
 
 //Name of the computer/site where compile is being run
 SITE:STRING=Honda-Pc
@@ -290,7 +344,7 @@ VCPKG_MANIFEST_MODE:BOOL=OFF
 VCPKG_PREFER_SYSTEM_LIBS:BOOL=OFF
 
 //Vcpkg target triplet (ex. x86-windows)
-VCPKG_TARGET_TRIPLET:STRING=x64-windows
+VCPKG_TARGET_TRIPLET:STRING=x86-windows
 
 //Enables messages from the VCPKG toolchain for debugging purposes.
 VCPKG_VERBOSE:BOOL=OFF
@@ -323,6 +377,55 @@ beer_lib_IS_TOP_LEVEL:STATIC=OFF
 beer_lib_SOURCE_DIR:STATIC=C:/Users/Honda/cpp/projects/Beer-Rating/beer_lib
 
 //Value Computed by CMake
+gmock_BINARY_DIR:STATIC=C:/Users/Honda/cpp/projects/Beer-Rating/build/_deps/googletest-build/googlemock
+
+//Value Computed by CMake
+gmock_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+gmock_SOURCE_DIR:STATIC=C:/Users/Honda/cpp/projects/Beer-Rating/build/_deps/googletest-src/googlemock
+
+//Build all of Google Mock's own tests.
+gmock_build_tests:BOOL=OFF
+
+//Value Computed by CMake
+googletest-distribution_BINARY_DIR:STATIC=C:/Users/Honda/cpp/projects/Beer-Rating/build/_deps/googletest-build
+
+//Value Computed by CMake
+googletest-distribution_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+googletest-distribution_SOURCE_DIR:STATIC=C:/Users/Honda/cpp/projects/Beer-Rating/build/_deps/googletest-src
+
+//Value Computed by CMake
+gtest_BINARY_DIR:STATIC=C:/Users/Honda/cpp/projects/Beer-Rating/build/_deps/googletest-build/googletest
+
+//Value Computed by CMake
+gtest_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+gtest_SOURCE_DIR:STATIC=C:/Users/Honda/cpp/projects/Beer-Rating/build/_deps/googletest-src/googletest
+
+//Build gtest's sample programs.
+gtest_build_samples:BOOL=OFF
+
+//Build all of gtest's own tests.
+gtest_build_tests:BOOL=OFF
+
+//Disable uses of pthreads in gtest.
+gtest_disable_pthreads:BOOL=OFF
+
+//Use shared (DLL) run-time lib even when Google Test is built
+// as static lib.
+gtest_force_shared_crt:BOOL=ON
+
+//Build gtest with internal symbols hidden in shared libraries.
+gtest_hide_internal_symbols:BOOL=OFF
+
+//Dependencies for the target
+gtest_main_LIB_DEPENDS:STATIC=general;gtest;
+
+//Value Computed by CMake
 main_BINARY_DIR:STATIC=C:/Users/Honda/cpp/projects/Beer-Rating/build/beer-rating
 
 //Value Computed by CMake
@@ -336,6 +439,8 @@ main_SOURCE_DIR:STATIC=C:/Users/Honda/cpp/projects/Beer-Rating/beer-rating
 # INTERNAL cache entries
 ########################
 
+//ADVANCED property for variable: BUILD_GMOCK
+BUILD_GMOCK-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
 CMAKE_AR-ADVANCED:INTERNAL=1
 //This is the directory where this CMakeCache.txt was created
@@ -350,6 +455,8 @@ CMAKE_CACHE_PATCH_VERSION:INTERNAL=1
 CMAKE_COMMAND:INTERNAL=C:/Program Files/CMake/bin/cmake.exe
 //Path to cpack program executable.
 CMAKE_CPACK_COMMAND:INTERNAL=C:/Program Files/CMake/bin/cpack.exe
+//ADVANCED property for variable: CMAKE_CTEST_COMMAND
+CMAKE_CTEST_COMMAND-ADVANCED:INTERNAL=1
 //Path to ctest program executable.
 CMAKE_CTEST_COMMAND:INTERNAL=C:/Program Files/CMake/bin/ctest.exe
 //ADVANCED property for variable: CMAKE_CXX_FLAGS
@@ -391,16 +498,50 @@ CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //Name of external makefile project generator.
 CMAKE_EXTRA_GENERATOR:INTERNAL=
 //Name of generator.
-CMAKE_GENERATOR:INTERNAL=Visual Studio 16 2019
+CMAKE_GENERATOR:INTERNAL=Visual Studio 17 2022
 //Generator instance identifier.
-CMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files (x86)/Microsoft Visual Studio/2019/Community
+CMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files/Microsoft Visual Studio/2022/Community
 //Name of generator platform.
-CMAKE_GENERATOR_PLATFORM:INTERNAL=x64
+CMAKE_GENERATOR_PLATFORM:INTERNAL=win32
 //Name of generator toolset.
-CMAKE_GENERATOR_TOOLSET:INTERNAL=host=x86
+CMAKE_GENERATOR_TOOLSET:INTERNAL=host=x64
+//Have include pthread.h
+CMAKE_HAVE_PTHREAD_H:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=C:/Users/Honda/cpp/projects/Beer-Rating
+//ADVANCED property for variable: CMAKE_INSTALL_BINDIR
+CMAKE_INSTALL_BINDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_DATADIR
+CMAKE_INSTALL_DATADIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_DATAROOTDIR
+CMAKE_INSTALL_DATAROOTDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_DOCDIR
+CMAKE_INSTALL_DOCDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_INCLUDEDIR
+CMAKE_INSTALL_INCLUDEDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_INFODIR
+CMAKE_INSTALL_INFODIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_LIBDIR
+CMAKE_INSTALL_LIBDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_LIBEXECDIR
+CMAKE_INSTALL_LIBEXECDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_LOCALEDIR
+CMAKE_INSTALL_LOCALEDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_LOCALSTATEDIR
+CMAKE_INSTALL_LOCALSTATEDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_MANDIR
+CMAKE_INSTALL_MANDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_OLDINCLUDEDIR
+CMAKE_INSTALL_OLDINCLUDEDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_RUNSTATEDIR
+CMAKE_INSTALL_RUNSTATEDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_SBINDIR
+CMAKE_INSTALL_SBINDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_SHAREDSTATEDIR
+CMAKE_INSTALL_SHAREDSTATEDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_SYSCONFDIR
+CMAKE_INSTALL_SYSCONFDIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER
 CMAKE_LINKER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS
@@ -416,7 +557,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MT
 CMAKE_MT-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
 //Platform information initialized
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //noop for ranlib
@@ -468,36 +609,28 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 COVERAGE_COMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: COVERAGE_EXTRA_FLAGS
 COVERAGE_EXTRA_FLAGS-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_BINARY_7Z
-CPACK_BINARY_7Z-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_BINARY_IFW
-CPACK_BINARY_IFW-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_BINARY_NSIS
-CPACK_BINARY_NSIS-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_BINARY_NUGET
-CPACK_BINARY_NUGET-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_BINARY_WIX
-CPACK_BINARY_WIX-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_BINARY_ZIP
-CPACK_BINARY_ZIP-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_SOURCE_7Z
-CPACK_SOURCE_7Z-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_SOURCE_ZIP
-CPACK_SOURCE_ZIP-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CTEST_SUBMIT_RETRY_COUNT
 CTEST_SUBMIT_RETRY_COUNT-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CTEST_SUBMIT_RETRY_DELAY
 CTEST_SUBMIT_RETRY_DELAY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DART_TESTING_TIMEOUT
 DART_TESTING_TIMEOUT-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: GITCOMMAND
-GITCOMMAND-ADVANCED:INTERNAL=1
+//Details about finding Python
+FIND_PACKAGE_MESSAGE_DETAILS_Python:INTERNAL=[C:/Python39/python.exe][cfound components: Interpreter ][v3.9.5()]
+//Details about finding PythonInterp
+FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[C:/Python39/python.exe][v3.9.5()]
+//Details about finding Threads
+FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+//ADVANCED property for variable: GIT_EXECUTABLE
+GIT_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MAKECOMMAND
 MAKECOMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MEMORYCHECK_COMMAND
 MEMORYCHECK_COMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MEMORYCHECK_SUPPRESSIONS_FILE
 MEMORYCHECK_SUPPRESSIONS_FILE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PYTHON_EXECUTABLE
+PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SITE
 SITE-ADVANCED:INTERNAL=1
 //Install the dependencies listed in your manifest:
@@ -514,4 +647,26 @@ Z_VCPKG_CHECK_MANIFEST_MODE:INTERNAL=OFF
 Z_VCPKG_POWERSHELL_PATH:INTERNAL=C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe
 //Vcpkg root directory
 Z_VCPKG_ROOT_DIR:INTERNAL=C:/dev/vcpkg
+//CMAKE_INSTALL_PREFIX during last run
+_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=C:/Program Files (x86)/Beer-Rating
+//Path to a program.
+_Python_EXECUTABLE:INTERNAL=C:/Python39/python.exe
+//Python Properties
+_Python_INTERPRETER_PROPERTIES:INTERNAL=Python;3;9;5;32;;cp39-win_amd64;C:\Python39\Lib;C:\Python39\Lib;C:\Python39\Lib\site-packages;C:\Python39\Lib\site-packages
+_Python_INTERPRETER_SIGNATURE:INTERNAL=b27f5aea21299c5263418dec5a8bbfc2
+cmake_package_name:INTERNAL=GTest
+generated_dir:INTERNAL=C:/Users/Honda/cpp/projects/Beer-Rating/build/_deps/googletest-build/googletest/generated
+//ADVANCED property for variable: gmock_build_tests
+gmock_build_tests-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: gtest_build_samples
+gtest_build_samples-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: gtest_build_tests
+gtest_build_tests-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: gtest_disable_pthreads
+gtest_disable_pthreads-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: gtest_force_shared_crt
+gtest_force_shared_crt-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: gtest_hide_internal_symbols
+gtest_hide_internal_symbols-ADVANCED:INTERNAL=1
+targets_export_name:INTERNAL=GTestTargets
 

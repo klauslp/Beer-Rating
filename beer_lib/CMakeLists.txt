@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 3.11-3.18)
 
 project(beer_lib)
 
-set(BUILD_STATIC_LIBS ON)
+set(BUILD_Shared_LIBS ON)
 set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS True)
 
 add_library(beer_lib src/reviewer.cpp)
