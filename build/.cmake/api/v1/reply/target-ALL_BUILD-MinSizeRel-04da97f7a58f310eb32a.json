@@ -1,0 +1,36 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"beer_lib/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "beer_lib::@2b0318e4e8371458c692"
+		}
+	],
+	"id" : "ALL_BUILD::@2b0318e4e8371458c692",
+	"isGeneratorProvided" : true,
+	"name" : "ALL_BUILD",
+	"paths" : 
+	{
+		"build" : "beer_lib",
+		"source" : "beer_lib"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

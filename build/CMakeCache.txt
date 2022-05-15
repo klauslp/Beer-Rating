@@ -377,6 +377,15 @@ beer_lib_IS_TOP_LEVEL:STATIC=OFF
 beer_lib_SOURCE_DIR:STATIC=C:/Users/Honda/cpp/projects/Beer-Rating/beer_lib
 
 //Value Computed by CMake
+beerrating_BINARY_DIR:STATIC=C:/Users/Honda/cpp/projects/Beer-Rating/build/tests
+
+//Value Computed by CMake
+beerrating_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+beerrating_SOURCE_DIR:STATIC=C:/Users/Honda/cpp/projects/Beer-Rating/tests
+
+//Value Computed by CMake
 gmock_BINARY_DIR:STATIC=C:/Users/Honda/cpp/projects/Beer-Rating/build/_deps/googletest-build/googlemock
 
 //Value Computed by CMake

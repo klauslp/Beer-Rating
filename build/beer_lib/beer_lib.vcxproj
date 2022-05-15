@@ -108,9 +108,18 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>Copying to output directory</Message>
+      <Message>Copying to output directory	Copying to tests directory</Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/Honda/cpp/projects/Beer-Rating/build/beer_lib/Debug/beer_lib.lib ../apps/Debug/beer_lib.lib
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/Honda/cpp/projects/Beer-Rating/build/beer_lib/Debug/beer_lib.lib ../beer-rating/Debug/beer_lib.lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/Honda/cpp/projects/Beer-Rating/build/beer_lib/Debug/beer_lib.lib ../tests/Debug/beer_lib.lib
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -154,9 +163,18 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>Copying to output directory</Message>
+      <Message>Copying to output directory	Copying to tests directory</Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/Honda/cpp/projects/Beer-Rating/build/beer_lib/Release/beer_lib.lib ../apps/Release/beer_lib.lib
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/Honda/cpp/projects/Beer-Rating/build/beer_lib/Release/beer_lib.lib ../beer-rating/Release/beer_lib.lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/Honda/cpp/projects/Beer-Rating/build/beer_lib/Release/beer_lib.lib ../tests/Release/beer_lib.lib
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -200,9 +218,18 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>Copying to output directory</Message>
+      <Message>Copying to output directory	Copying to tests directory</Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/Honda/cpp/projects/Beer-Rating/build/beer_lib/MinSizeRel/beer_lib.lib ../apps/MinSizeRel/beer_lib.lib
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/Honda/cpp/projects/Beer-Rating/build/beer_lib/MinSizeRel/beer_lib.lib ../beer-rating/MinSizeRel/beer_lib.lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/Honda/cpp/projects/Beer-Rating/build/beer_lib/MinSizeRel/beer_lib.lib ../tests/MinSizeRel/beer_lib.lib
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -245,9 +272,18 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>Copying to output directory</Message>
+      <Message>Copying to output directory	Copying to tests directory</Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/Honda/cpp/projects/Beer-Rating/build/beer_lib/RelWithDebInfo/beer_lib.lib ../apps/RelWithDebInfo/beer_lib.lib
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/Honda/cpp/projects/Beer-Rating/build/beer_lib/RelWithDebInfo/beer_lib.lib ../beer-rating/RelWithDebInfo/beer_lib.lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/Honda/cpp/projects/Beer-Rating/build/beer_lib/RelWithDebInfo/beer_lib.lib ../tests/RelWithDebInfo/beer_lib.lib
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -318,7 +354,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\Honda\cpp\projects\Beer-Rating\beer_lib\src\reviewer.cpp" />
+    <ClCompile Include="C:\Users\Honda\cpp\projects\Beer-Rating\beer_lib\src\beerrating.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\Honda\cpp\projects\Beer-Rating\build\ZERO_CHECK.vcxproj">

@@ -32,12 +32,12 @@ if(error_code)
 endif()
 
 execute_process(
-  COMMAND "C:/Program Files/Git/cmd/git.exe"  checkout release-1.11.0 --
+  COMMAND "C:/Program Files/Git/cmd/git.exe"  checkout release-1.10.0 --
   WORKING_DIRECTORY "C:/Users/Honda/cpp/projects/Beer-Rating/build/_deps/googletest-src"
   RESULT_VARIABLE error_code
   )
 if(error_code)
-  message(FATAL_ERROR "Failed to checkout tag: 'release-1.11.0'")
+  message(FATAL_ERROR "Failed to checkout tag: 'release-1.10.0'")
 endif()
 
 set(init_submodules TRUE)

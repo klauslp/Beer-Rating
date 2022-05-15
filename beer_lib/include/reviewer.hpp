@@ -2,7 +2,7 @@
 #define REVIEWER_HPP
 
 #include <vector>
-#include "Beer_rating.hpp"
+#include "beerrating.hpp"
 
 class Reviewer
 {
@@ -10,7 +10,7 @@ public:
     Reviewer();
 
 private:
-    std::vector<Beer_rating> beer_reviews_;     
+    std::vector<BeerRating> beer_reviews_;     
 
 };
 #endif

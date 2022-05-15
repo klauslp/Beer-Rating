@@ -7,7 +7,7 @@ project(beer_lib)
 set(BUILD_Shared_LIBS ON)
 set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS True)
 
-add_library(beer_lib src/reviewer.cpp)
+add_library(beer_lib src/beerrating.cpp)
 
 # PUBLIC needed to make both hello.h and hello library available elsewhere in project
 target_include_directories(${PROJECT_NAME}
@@ -19,6 +19,11 @@ target_compile_features(beer_lib PUBLIC cxx_std_20)
 add_custom_command(TARGET beer_lib POST_BUILD 
   COMMAND "${CMAKE_COMMAND}" -E copy 
      "$<TARGET_FILE:beer_lib>"
-     "../apps/$<CONFIGURATION>/$<TARGET_FILE_NAME:beer_lib>" 
+     "../beer-rating/$<CONFIGURATION>/$<TARGET_FILE_NAME:beer_lib>" 
   COMMENT "Copying to output directory")
-  
+
+add_custom_command(TARGET beer_lib POST_BUILD 
+COMMAND "${CMAKE_COMMAND}" -E copy 
+    "$<TARGET_FILE:beer_lib>"
+    "../tests/$<CONFIGURATION>/$<TARGET_FILE_NAME:beer_lib>" 
+COMMENT "Copying to tests directory")

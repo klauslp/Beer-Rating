@@ -402,7 +402,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\Honda\cpp\projects\Beer-Rating\tests\beerrating.cpp" />
+    <ClCompile Include="C:\Users\Honda\cpp\projects\Beer-Rating\tests\beerrating_test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\Honda\cpp\projects\Beer-Rating\build\ZERO_CHECK.vcxproj">

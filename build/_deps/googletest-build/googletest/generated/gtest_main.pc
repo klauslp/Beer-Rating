@@ -1,10 +1,11 @@
-libdir=C:/Program Files (x86)/Beer-Rating/lib
-includedir=C:/Program Files (x86)/Beer-Rating/include
+prefix=${pcfiledir}/../..
+libdir=${prefix}/lib
+includedir=${prefix}/include
 
 Name: gtest_main
 Description: GoogleTest (with main() function)
-Version: 1.11.0
+Version: 1.10.0
 URL: https://github.com/google/googletest
-Requires: gtest = 1.11.0
+Requires: gtest
 Libs: -L${libdir} -lgtest_main 
-Cflags: -I${includedir} -DGTEST_HAS_PTHREAD=0
+Cflags: -I${includedir} -DGTEST_HAS_PTHREAD=0 
