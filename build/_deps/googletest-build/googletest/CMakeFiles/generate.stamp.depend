@@ -6,8 +6,7 @@ C:/Program Files/CMake/share/cmake-3.22/Modules/CheckIncludeFile.cmake
 C:/Program Files/CMake/share/cmake-3.22/Modules/CheckLibraryExists.cmake
 C:/Program Files/CMake/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake
 C:/Program Files/CMake/share/cmake-3.22/Modules/FindPackageMessage.cmake
-C:/Program Files/CMake/share/cmake-3.22/Modules/FindPython.cmake
-C:/Program Files/CMake/share/cmake-3.22/Modules/FindPython/Support.cmake
+C:/Program Files/CMake/share/cmake-3.22/Modules/FindPythonInterp.cmake
 C:/Program Files/CMake/share/cmake-3.22/Modules/FindThreads.cmake
 C:/Program Files/CMake/share/cmake-3.22/Modules/Internal/CheckSourceCompiles.cmake
 C:/Program Files/CMake/share/cmake-3.22/Modules/WriteBasicConfigVersionFile.cmake
@@ -16,4 +15,4 @@ C:/Users/Honda/cpp/projects/Beer-Rating/build/_deps/googletest-src/googletest/cm
 C:/Users/Honda/cpp/projects/Beer-Rating/build/_deps/googletest-src/googletest/cmake/gtest.pc.in
 C:/Users/Honda/cpp/projects/Beer-Rating/build/_deps/googletest-src/googletest/cmake/gtest_main.pc.in
 C:/Users/Honda/cpp/projects/Beer-Rating/build/_deps/googletest-src/googletest/cmake/internal_utils.cmake
-C:/dev/vcpkg/installed/x86-windows/share/python/vcpkg-cmake-wrapper.cmake
+C:/dev/vcpkg/installed/x86-windows/share/pythoninterp/vcpkg-cmake-wrapper.cmake

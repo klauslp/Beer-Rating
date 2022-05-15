@@ -43,7 +43,8 @@ Description:
     - int rating: Number from 0 - 10 of taste and impression of the beer
     - float alcohol: The procentage of alcohol in the beer
     - string brewery: Name of the brewery behind the beer
-    - string taste: A text description of the taste and overall impression.  
+    - string taste: A text description of the taste and overall impression.
+    - date review date: The date of reviewing the beer  
 
 ### 2. View a beer rating record
 

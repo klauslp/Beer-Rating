@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.15)
+#cmake_minimum_required(VERSION 3.20)
 
 include(GoogleTest)
 include(CTest)
@@ -7,10 +7,11 @@ include(FetchContent)
 enable_testing()
 set( gtest_force_shared_crt ON CACHE BOOL "Always use msvcrt.dll" FORCE)
 
+
 FetchContent_Declare(
   googletest
   GIT_REPOSITORY https://github.com/google/googletest.git
-  GIT_TAG        release-1.11.0
+  GIT_TAG        release-1.10.0
 )
 
 set(FETCHCONTENT_QUIET off)
@@ -44,5 +45,5 @@ endmacro()
 
 message("${PROJECT_DIR}")
 
-package_add_test_with_libraries(BeerRatingTests beerrating.cpp beer_lib "${PROJECT_DIR}")
+package_add_test_with_libraries(BeerRatingTests beerrating_test.cpp beer_lib "${PROJECT_DIR}")
 

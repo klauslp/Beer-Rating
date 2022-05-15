@@ -1,0 +1,2 @@
+C:/Users/Honda/cpp/projects/Beer-Rating/build/_deps/googletest-build/googlemock/gmock.dir/Release/gtest-all.obj
+C:/Users/Honda/cpp/projects/Beer-Rating/build/_deps/googletest-build/googlemock/gmock.dir/Release/gmock-all.obj
